@@ -1,11 +1,7 @@
 import {useState} from "react";
 import MyList from "./MyList";
 const MyContainer = ({keyword}) => {
-    const [items, setItems] = useState([{
-      "id": "1", "text": "First text", "clicked": false
-    },
-    {"id": "2", "text": "Second text", "clicked": false}
-  ]);
+    const [items, setItems] = useState([]);
   const [text, setText] = useState('');
 
   const updateItem = (id) => {
