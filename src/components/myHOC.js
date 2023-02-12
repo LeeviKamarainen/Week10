@@ -1,4 +1,4 @@
-const myHOC = (component, name) => {
+const MyHOC = (component, name) => {
   return (
     // Wraps the component inside a div with class of wrapper.
     <div class="wrapper"> 
@@ -7,4 +7,4 @@ const myHOC = (component, name) => {
   )
 }
 
-export default myHOC
+export default MyHOC
