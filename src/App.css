@@ -38,8 +38,8 @@
 }
 
 .clicked{
-  text-decoration: line-through;
+  text-decoration: none;
 }
 .notclicked{
-  text-decoration: none;
+  text-decoration: line-through;
 }
