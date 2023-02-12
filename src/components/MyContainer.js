@@ -39,7 +39,7 @@ const MyContainer = ({keyword}) => {
 
   return (
     <div>
-      <p>{t('This is the front page')}</p>
+      <p id="etusivu">{t('This is the front page')}</p>
       <MyList
       updateItem={updateItem} 
       header="Really epic list component"
