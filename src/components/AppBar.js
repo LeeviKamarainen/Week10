@@ -21,12 +21,12 @@ export default function ButtonAppBar() {
             sx={{ mr: 2 }}
           >
           </IconButton>
-            <Button color="inherit" id="home" component={Link} to="/">{t('home')}</Button>
-            <Button color="inherit" id="about" component={Link} to="/about">{t('about')}</Button>
+            <Button color="inherit" component={Link} to="/">{t('home')}</Button>
+            <Button color="inherit" component={Link} to="/about">{t('about')}</Button>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             </Typography>
-            <Button color="inherit" id="fi" onClick={() => i18n.changeLanguage('fi')}>FI</Button>
-            <Button color="inherit" id="en" onClick={() => i18n.changeLanguage('en')}>EN</Button>
+            <Button color="inherit" id="en" onClick={() => i18n.changeLanguage('fi')}>FI</Button>
+            <Button color="inherit" id="fi" onClick={() => i18n.changeLanguage('en')}>EN</Button>
         </Toolbar>
       </AppBar>
     </Box>
