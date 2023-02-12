@@ -1,6 +1,9 @@
 import {useState} from "react";
 import MyList from "./MyList";
+import { useTranslation } from 'react-i18next';
 const MyContainer = ({keyword}) => {
+  
+  const { t, i18n } = useTranslation();
     const [items, setItems] = useState([{
       "id": "1", "text": "First text", "clicked": false
     },
@@ -36,6 +39,7 @@ const MyContainer = ({keyword}) => {
 
   return (
     <div>
+      <p>{t('This is the front page')}</p>
       <MyList
       updateItem={updateItem} 
       header="Really epic list component"
