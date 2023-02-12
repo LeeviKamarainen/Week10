@@ -7,7 +7,7 @@ const MyList = (props) => {
       <ol>
         {props.items.map((item) => (
             <li key={item.id} onClick={() => props.updateItem(item.id)}
-            className={item.clicked ? 'clicked': 'notclicked'}
+            style={item.clicked ? {textDecoration: "line-through"}: {textDecoration: "none"}}
             >{item.text}</li>
         ))}
       </ol>

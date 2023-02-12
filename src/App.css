@@ -36,10 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.clicked{
-  text-decoration: none;
-}
-.notclicked{
-  text-decoration: line-through;
-}
